@@ -3,6 +3,7 @@ const app = express();
 const path = require('path')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const port = process.env.PORT || 8080
 
 app.use(cors());
 
@@ -18,7 +19,12 @@ app.use('/', require("./routes/router"))
 app.use('/user', require("./routes/user"))
 app.use('/admin', require("./routes/admin"))
 
+app.use(express.static('public'));
+  app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public/index.html'));
+})
 
-app.listen(5000, () => {
+
+app.listen(port, () => {
   console.log('Go to the server')
 })
