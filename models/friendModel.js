@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const User = require('./userModel')
 
 mongoose.connect('mongodb://localhost:27017/angularJs')
 
@@ -11,4 +12,4 @@ const friendSchema = new Schema({
 })
 
 
-module.exports = mongoose.model('admin', friendSchema);
+module.exports = mongoose.model('friend', friendSchema);
