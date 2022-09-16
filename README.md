@@ -1,1 +1,1 @@
-Git is awesome tool.
+Git is awesome tool for tracking changes in code.
