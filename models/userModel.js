@@ -12,7 +12,7 @@ const userSchema = new Schema({
   //mobile: { type: Number, default: 1234567890 },
   password: { type: String, required: true },
   date: { type: Date, default: Date.now },
-  token: { type: String, default:"" },
+  token: { type: String, default: "" },
   // friend: { type: array, default: []}
   //isActive: { type: Boolean, default: false },
   //device_info: { type: Array, default: []}

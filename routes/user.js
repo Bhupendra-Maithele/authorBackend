@@ -9,7 +9,7 @@ const saltRounds = 10;
 const path = require('path')
 const fs = require('fs');
 
-
+// console.log("Hello world");
 // var p1 = path.join(__dirname + '/../' + '/images')
 // console.log('path', p1)
 // var imgStr = fs.readFileSync(path.join(__dirname + '/../' + '/images/photo.jpeg'), (err, result) => {
